@@ -29,6 +29,7 @@ import Folder from '../fileexplorer/Folder';
 import folderData from '../fileexplorer/folderData.json'
 import Folder2 from '../fileexplorer/Folder2';
 import SweetAlert from '../sweetAlert/SweetAlert';
+import ReactModal from '../react-modal/ReactModal';
 
 
 export default function Main(props) {
@@ -125,6 +126,7 @@ export default function Main(props) {
     {/* <Folder folderInfo={folderData} /> */}
     {/* <Folder2 folderInfo={folderData} /> */}
     <SweetAlert />
+    <ReactModal />
 
 
 
