@@ -28,6 +28,7 @@ import StateDropdown from '../state/StateDropdown';
 import Folder from '../fileexplorer/Folder';
 import folderData from '../fileexplorer/folderData.json'
 import Folder2 from '../fileexplorer/Folder2';
+import SweetAlert from '../sweetAlert/SweetAlert';
 
 
 export default function Main(props) {
@@ -122,7 +123,8 @@ export default function Main(props) {
     {/* <RemainingChar /> */}
     {/* <StateDropdown /> */}
     {/* <Folder folderInfo={folderData} /> */}
-    <Folder2 folderInfo={folderData} />
+    {/* <Folder2 folderInfo={folderData} /> */}
+    <SweetAlert />
 
 
 
