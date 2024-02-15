@@ -35,6 +35,11 @@ import PureDemo1 from '../pure-component/PureDemo1';
 import PureDemo2 from '../pure-component/PureDemo2';
 import MemoParent from '../react-memo/MemoParent';
 import MemoParent2 from '../react-memo/MemoParent2';
+import EventDemo1 from '../react-event/EventDemo1';
+import EventDemo2 from '../react-event/EventDemo2';
+import EventDemo3 from '../react-event/EventDemo3';
+import EventDemo4 from '../react-event/EventDemo4';
+import EventDemo5 from '../react-event/EventDemo5';
 
 
 export default function Main(props) {
@@ -134,11 +139,18 @@ export default function Main(props) {
     {/* <ReactModal /> */}
     {/* <ProductList /> */}
 
+    {/* 12-2-2024 */}
+    {/* <EventDemo1 /> */}
+    {/* <EventDemo2 /> */}
+    {/* <EventDemo3 /> */}
+    {/* <EventDemo4 /> */}
+    <EventDemo5 />
+
     {/* 14-2-2024 */}
     {/* <PureDemo1 /> */}
     {/* <PureDemo2 /> */}
     {/* <MemoParent /> */}
-    <MemoParent2 />
+    {/* <MemoParent2 /> */}
 
 
   </>
