@@ -31,6 +31,10 @@ import Folder2 from '../fileexplorer/Folder2';
 import SweetAlert from '../sweetAlert/SweetAlert';
 import ReactModal from '../react-modal/ReactModal';
 import ProductList from '../search functionality/ProductList';
+import PureDemo1 from '../pure-component/PureDemo1';
+import PureDemo2 from '../pure-component/PureDemo2';
+import MemoParent from '../react-memo/MemoParent';
+import MemoParent2 from '../react-memo/MemoParent2';
 
 
 export default function Main(props) {
@@ -128,7 +132,13 @@ export default function Main(props) {
     {/* <Folder2 folderInfo={folderData} /> */}
     {/* <SweetAlert /> */}
     {/* <ReactModal /> */}
-    <ProductList />
+    {/* <ProductList /> */}
+
+    {/* 14-2-2024 */}
+    {/* <PureDemo1 /> */}
+    {/* <PureDemo2 /> */}
+    {/* <MemoParent /> */}
+    <MemoParent2 />
 
 
   </>
