@@ -40,6 +40,12 @@ import EventDemo2 from '../react-event/EventDemo2';
 import EventDemo3 from '../react-event/EventDemo3';
 import EventDemo4 from '../react-event/EventDemo4';
 import EventDemo5 from '../react-event/EventDemo5';
+import HttpDemo1 from '../HTTP/HttpDemo1';
+import HttpDemo2 from '../HTTP/HttpDemo2';
+import HttpDemo3 from '../HTTP/HttpDemo3';
+import HttpDemo4 from '../HTTP/HttpDemo4';
+import HttpDemo5 from '../HTTP/HttpDemo5';
+import FakeStore from '../HTTP/FakeStore';
 
 
 export default function Main(props) {
@@ -144,13 +150,21 @@ export default function Main(props) {
     {/* <EventDemo2 /> */}
     {/* <EventDemo3 /> */}
     {/* <EventDemo4 /> */}
-    <EventDemo5 />
+    {/* <EventDemo5 /> */}
 
     {/* 14-2-2024 */}
     {/* <PureDemo1 /> */}
     {/* <PureDemo2 /> */}
     {/* <MemoParent /> */}
     {/* <MemoParent2 /> */}
+
+    {/* <HttpDemo1 /> */}
+    {/* <HttpDemo2 /> */}
+    {/* <HttpDemo3 /> */}
+    {/* <HttpDemo4 /> */}
+    {/* <HttpDemo5 /> */}
+    <FakeStore />
+
 
 
   </>
