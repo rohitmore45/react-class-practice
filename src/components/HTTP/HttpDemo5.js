@@ -14,9 +14,10 @@ function HttpDemo5() {
     }
     try {
       let responseArr = await axios.all(promiseArr)
+      console.log(responseArr)
       responseArr = responseArr.map(res => res.data)
       setGithubData(responseArr)
-      console.log(responseArr)
+
     } catch (err) {
       console.log('something went wrong')
     }
@@ -51,5 +52,5 @@ function HttpDemo5() {
     </div>
   )
 }
-// export default HttpDemo5;
-export default LoggerHOC(HttpDemo5);
+export default HttpDemo5;
+// export default LoggerHOC(HttpDemo5);

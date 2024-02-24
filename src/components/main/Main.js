@@ -163,7 +163,7 @@ export default function Main(props) {
     {/* <HttpDemo1 /> */}
     {/* <HttpDemo2 /> */}
     {/* <HttpDemo3 /> */}
-    <HttpDemo4 />
+    {/* <HttpDemo4 /> */}
     <HttpDemo5 />
     {/* <FakeStore /> */}
 

@@ -10,7 +10,7 @@ export default function HttpDemo3() {
   const fetchUsers = async () => {
     let URL = 'https://jsonplaceholder.typicode.com/users';
     let response = await axios.get(URL);
-    // console.log(response.data)
+    console.log(response)
     setUsers(response.data)
     setIsLoading(false)
   }
