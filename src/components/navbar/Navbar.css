@@ -1,0 +1,4 @@
+.nav-link.active {
+  border-bottom: 3px solid red;
+  transition: 3s;
+}

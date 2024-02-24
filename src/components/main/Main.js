@@ -1,8 +1,4 @@
 import React from 'react';
-import './Main.css'
-// import img1 from './images/img1.jpg';
-// import img2 from './images/img2.jfif';
-// import img3 from './images/img3.jfif'
 
 import Carousel from '../carousel/Carousel'
 import ShowProduct from '../listitem/ShowProduct'
@@ -48,41 +44,18 @@ import HttpDemo5 from '../HTTP/HttpDemo5';
 import FakeStore from '../HTTP/FakeStore';
 import ClickCounter from '../HOC/ClickCounter';
 import HoverCounter from '../HOC/HoverCounter';
+import { Route, Routes } from 'react-router-dom';
+import Home from '../routing/Home'
+import Careers from '../routing/Careers'
+import AboutUs from '../routing/AboutUs'
+import ContactUs from '../routing/ContactUs'
+import NotFound from '../routing/NotFound'
+
+
 
 
 export default function Main(props) {
-  // return <div className='container'>
-  //   <div className="card mycard">
-  //     <img src={img1} className="card-img-top" alt="..." />
-  //     <div className="card-body">
-  //       <h5 className="card-title">Nature</h5>
-  //       <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  //       <a href="#" className="btn btn-primary">View more..</a>
-  //     </div>
-  //   </div>
-  //   <div className="card mycard">
-  //     <img src={img2} className="card-img-top" alt="..." />
-  //     <div className="card-body">
-  //       <h5 className="card-title">Nature</h5>
-  //       <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  //       <a href="#" className="btn btn-danger">View more..</a>
-  //     </div>
-  //   </div>
-  //   <div className="card mycard">
-  //     <img src={img3} className="card-img-top" alt="..." />
-  //     <div className="card-body">
-  //       <h5 className="card-title">Nature</h5>
-  //       <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  //       <a href="#" className="btn btn-warning">View more..</a>
-  //     </div>
-  //   </div>
-  //   <div>
-  //     <button className="btn btn-success" type="button" disabled>
-  //       <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-  //       Loading...
-  //     </button>
-  //   </div>
-  // </div>
+
   return <>
     <Categories />
     {/* <Carousel /> */}
@@ -160,16 +133,28 @@ export default function Main(props) {
     {/* <MemoParent /> */}
     {/* <MemoParent2 /> */}
 
+    {/* 21-2-2024 */}
     {/* <HttpDemo1 /> */}
     {/* <HttpDemo2 /> */}
     {/* <HttpDemo3 /> */}
     {/* <HttpDemo4 /> */}
-    <HttpDemo5 />
+    {/* <HttpDemo5 /> */}
     {/* <FakeStore /> */}
 
     {/* 23-2-2024 */}
     {/* <ClickCounter /> */}
     {/* <HoverCounter /> */}
+
+    {/* 24-2-2024 */}
+    <Routes>
+      <Route exact path={'/'} element={<Home />} />
+      <Route exact path={'/home'} element={<Home />} />
+      <Route exact path={'/careers'} element={<Careers />} />
+      <Route exact path={'/aboutus'} element={<AboutUs />} />
+      <Route exact path={'/contactus'} element={<ContactUs />} />
+      <Route exact path={'/products'} element={<ProductList />} />
+      <Route exact path={'*'} element={<NotFound />} />
+    </Routes>
 
 
 
