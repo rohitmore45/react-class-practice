@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import UserCard from '../listitem/UserCard';
 import AxiosInstance from './AxiosInstance';
+import LoggerHOC from '../HOC/LoggerHOC';
 
-export default function HttpDemo4() {
+function HttpDemo4() {
 
   const [users, setUsers] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -46,3 +47,4 @@ export default function HttpDemo4() {
     </div>
   )
 }
+export default LoggerHOC(HttpDemo4)

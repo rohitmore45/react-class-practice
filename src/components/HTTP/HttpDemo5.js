@@ -1,7 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
+import LoggerHOC from '../HOC/LoggerHOC';
 
-export default function HttpDemo5() {
+function HttpDemo5() {
   const [githubData, setGithubData] = useState([])
   const userNames = ['rohitmore45', 'sanjaysamantra1', 'defunkt'];
 
@@ -15,7 +16,7 @@ export default function HttpDemo5() {
       let responseArr = await axios.all(promiseArr)
       responseArr = responseArr.map(res => res.data)
       setGithubData(responseArr)
-      // console.log(responseArr)
+      console.log(responseArr)
     } catch (err) {
       console.log('something went wrong')
     }
@@ -29,23 +30,26 @@ export default function HttpDemo5() {
     <div>
       <h2 className='text-center'>Github data using axios.all</h2>
       <table className='table table-bordered table-striped'>
-        {
-          githubData.map(data => {
-            return <tr key={data.id}>
-              <td>{data.id}</td>
-              <td>{data.login}</td>
-              <td>{data.name}</td>
-              <td>{data.email}</td>
-              <td>{data.followers}</td>
-              <td>{data.location}</td>
-              <td>{data.public_repos}</td>
-            </tr>
-          })
-        }
-
+        <tbody>
+          {
+            githubData.map(data => {
+              return <tr key={data.id}>
+                <td>{data.id}</td>
+                <td>{data.login}</td>
+                <td>{data.name}</td>
+                <td>{data.email}</td>
+                <td>{data.followers}</td>
+                <td>{data.location}</td>
+                <td>{data.public_repos}</td>
+              </tr>
+            })
+          }
+        </tbody>
       </table>
 
 
     </div>
   )
 }
+// export default HttpDemo5;
+export default LoggerHOC(HttpDemo5);

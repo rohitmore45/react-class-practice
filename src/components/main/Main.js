@@ -46,6 +46,8 @@ import HttpDemo3 from '../HTTP/HttpDemo3';
 import HttpDemo4 from '../HTTP/HttpDemo4';
 import HttpDemo5 from '../HTTP/HttpDemo5';
 import FakeStore from '../HTTP/FakeStore';
+import ClickCounter from '../HOC/ClickCounter';
+import HoverCounter from '../HOC/HoverCounter';
 
 
 export default function Main(props) {
@@ -161,9 +163,13 @@ export default function Main(props) {
     {/* <HttpDemo1 /> */}
     {/* <HttpDemo2 /> */}
     {/* <HttpDemo3 /> */}
-    {/* <HttpDemo4 /> */}
-    {/* <HttpDemo5 /> */}
-    <FakeStore />
+    <HttpDemo4 />
+    <HttpDemo5 />
+    {/* <FakeStore /> */}
+
+    {/* 23-2-2024 */}
+    {/* <ClickCounter /> */}
+    {/* <HoverCounter /> */}
 
 
 
