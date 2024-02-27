@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function UserCard({ user }) {
-  let { id, name, email,  address: { city } } = user;
+  let { id, name, email, address: { city } } = user;
 
   return <>
     <div className="col-sm-3 mt-4 mb-4" >
@@ -14,13 +14,13 @@ export default function UserCard({ user }) {
         <div className="card-body">
           <h5 className="card-title">Name: {name}</h5>
           <p className="card-text">
-          Email: {email}
+            Email: {email}
           </p>
           <p className="card-text">
             Address: {city}
           </p>
           <a href="#" className="btn btn-primary">
-            View more..
+            Details
           </a>
         </div>
       </div>

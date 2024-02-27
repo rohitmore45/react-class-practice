@@ -50,6 +50,10 @@ import Careers from '../routing/Careers'
 import AboutUs from '../routing/AboutUs'
 import ContactUs from '../routing/ContactUs'
 import NotFound from '../routing/NotFound'
+import Products from '../routing/Product';
+import ProductDetails from '../routing/ProductDetails';
+import Users from '../routing/Users';
+import UserDetails from '../routing/UserDetails';
 
 
 
@@ -152,7 +156,10 @@ export default function Main(props) {
       <Route exact path={'/careers'} element={<Careers />} />
       <Route exact path={'/aboutus'} element={<AboutUs />} />
       <Route exact path={'/contactus'} element={<ContactUs />} />
-      <Route exact path={'/products'} element={<ProductList />} />
+      <Route exact path={'/products'} element={<Products />} />
+      <Route exact path={'/productdetails/:id'} element={<ProductDetails />} />
+      <Route exact path={'/users'} element={<Users />} />
+      <Route exact path={'/userdetails'} element={<UserDetails />} />
       <Route exact path={'*'} element={<NotFound />} />
     </Routes>
 

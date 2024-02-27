@@ -62,7 +62,7 @@ export default function ProductList() {
                   <h4 className="card-title">{category}</h4>
                   <h6 className="card-title">${price}</h6>
                   <p className="card-text text-truncate " title={description}>{description}</p>
-                  <a href="#" className="btn btn-outline-primary">Buy Now</a>
+                  <a href="#" className="btn btn-outline-primary">View</a>
                 </div>
               </div>
             </div>
