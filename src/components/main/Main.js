@@ -54,6 +54,9 @@ import Products from '../routing/Product';
 import ProductDetails from '../routing/ProductDetails';
 import Users from '../routing/Users';
 import UserDetails from '../routing/UserDetails';
+import PermanentJob from '../routing/PermanentJob';
+import ContractJob from '../routing/ContractJob';
+import ProtectedRoute from '../routing/ProtectedRoute';
 
 
 
@@ -153,10 +156,18 @@ export default function Main(props) {
     <Routes>
       <Route exact path={'/'} element={<Home />} />
       <Route exact path={'/home'} element={<Home />} />
-      <Route exact path={'/careers'} element={<Careers />} />
+      <Route exact path={'/careers'} element={<Careers />}>
+        <Route index element={<PermanentJob />} />
+        <Route path={'permanent'} element={<PermanentJob />} />
+        <Route path={'contract'} element={<ContractJob />} />
+      </Route>
+
       <Route exact path={'/aboutus'} element={<AboutUs />} />
       <Route exact path={'/contactus'} element={<ContactUs />} />
-      <Route exact path={'/products'} element={<Products />} />
+      <Route exact path={'/products'}
+        element={<ProtectedRoute>
+          <Products />
+        </ProtectedRoute>} />
       <Route exact path={'/productdetails/:id'} element={<ProductDetails />} />
       <Route exact path={'/users'} element={<Users />} />
       <Route exact path={'/userdetails'} element={<UserDetails />} />
